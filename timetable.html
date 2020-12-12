@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edu-Share</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/timetable.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="layer1">
+                <img class="logo" src="style/imgs/logo.png">
+                <div class="searchcont">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" placeholder="Search.." class="search">
+                </div>
+                <button class="logout" onclick=" visiturl('index.html') ">Log Out</button>
+            </div>
+            <div class="layer2">
+                <div class="display"></div>
+                <div class="user" onclick="visiturl('finalsigned.html')">
+                    <div class="userimg"><img src=""></div>
+                    <div class="userinf">
+                        <h1>dr.rania ziedan</h1>
+                        <h3>Lecturer At Shoubr Faculty Of Engineering</h3>
+                    </div>
+                </div>
+                <div class="navtable">
+                    <table>
+                        <tr>
+                            <td><a href="timetable.html">Time Table</a></td>
+                            <td><a href="list.html">List</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="Degree.html">Degrees</a></td>
+                            <td><a href="HomeWork.html">HomeWorks</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+                <div class="table">
+                        <h1>#Table</h1>
+                    </div>
+            <form class="select">
+                <select name="days" id="Days">
+                    <option value="SUN" selected>SUN</option>
+                    <option value="MON">MON</option>
+                    <option value="TUE">TUE</option>
+                    <option value="WED">WED</option>
+                </select>
+    
+                <select name="time" id="thetime">
+                    <option value="9-10:30">9-10:30</option>
+                    <option value="10:30-12">10:30-12</option>
+                    <option value="12:30-2">12:30-2</option>
+                    <option value="2:10-3:40">2:10-3:40</option>
+                </select>
+    
+                <input type="text" placeholder="subject" id="subject">
+                <button type="button" id="add" >Add</button>
+    
+            </form>
+            <table id="timetable">
+                <tr>
+                    <th>DAY</th>
+                    <th>9-10:30</th>
+                    <th>10:30-12</th>
+                    <th>12:30-2</th>
+                    <th>2:10-3:40</th>
+                </tr>
+                <tr>
+                    <th class="days">SUN</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="days">MON</th>
+                    <td></td>
+                    <td></td>
+                    <td>Web</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="days">TUE</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="days">WED</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="socialmedia">
+                <a href="http://linkedin.com"><img src="style/imgs/social1-06.png"></a>
+                <a href="http://twitter.com"><img src="style/imgs/social1-07.png"></a>
+                <a href="http://facebock.com"><img src="style/imgs/social1-08.png"></a>
+            </div>
+            <div class="newsletter">
+                <div class="dash"></div>
+                <div class="footernewsl">
+                    <form id="fo">
+                        <label for="newsletterE">Subscribe to newsletter</label><br>
+                        <input id="newsletterE" type="email" placeholder="Email Adress">
+                        <input id="newsletterB" type="button" value="Subscribe">
+                    </form>
+                    <div id="warning"></div>
+
+                </div>
+            </div>
+            <hr>
+
+            <br><br><br>
+            <div class="footercopy">Copyright ©2019 EduShare</div>
+        </div>
+
+    </footer>
+</body>
+
+
+    <script src="js/global.js"></script>
+    <script src="js/timetable.js"></script>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edu-Share</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/HomeWorkNew.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="layer1">
+                <img class="logo" src="style/imgs/logo.png">
+                <div class="searchcont">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" placeholder="Search.." class="search">
+                </div>
+                <button class="logout" onclick=" visiturl('index.html') ">Log Out</button>
+            </div>
+            <div class="layer2">
+                <div class="display"></div>
+                <div class="innercontainer">
+                    <div class="user" onclick="visiturl('finalsigned.html')">
+                        <div class="userimg"><img src=""></div>
+                        <div class="userinf">
+                            <h1>dr.rania ziedan</h1>
+                            <h3>Lecturer At Shoubr Faculty Of Engineering</h3>
+                        </div>
+                    </div>
+                    <div class="navtable">
+                        <table>
+                            <tr>
+                                <td><a href="timetable.html">Time Table</a></td>
+                                <td><a href="list.html">List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Degree.html">Degrees</a></td>
+                                <td><a href="HomeWork.html">HomeWorks</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="HW">
+                <h1>#New Homework</h1>
+            </div>
+            <form class="form">
+                <div class="dname">
+                    <label for="txtname">Homework Name:</label>
+                    <input id="txtname" type="text" placeholder="Name">
+                </div>
+                <br>
+                <div class="SE">
+                    <div class="box">
+                        <label for="start">Start:</label>
+                        <input type="date" id="start" placeholder="Start">
+                    </div>
+                    <div class="box">
+                        <label for="end">&nbsp;&nbsp;End:</label>
+                        <input type="date" id="end" placeholder="End">
+                    </div>
+                </div>
+                <br>
+                <textarea id="content"></textarea>
+                <br>
+                <input type="text" id="finaldegree" placeholder="Degree">
+                <input class="button" type="button" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="socialmedia">
+                <a href="http://linkedin.com"><img src="style/imgs/social1-06.png"></a>
+                <a href="http://twitter.com"><img src="style/imgs/social1-07.png"></a>
+                <a href="http://facebock.com"><img src="style/imgs/social1-08.png"></a>
+            </div>
+            <div class="newsletter">
+                <div class="dash"></div>
+                <div class="footernewsl">
+                    <form id="fo">
+                        <label for="newsletterE">Subscribe to newsletter</label><br>
+                        <input id="newsletterE" type="email" placeholder="Email Adress">
+                        <input id="newsletterB" type="button" value="Subscribe">
+                    </form>
+                    <div id="warning"></div>
+
+                </div>
+            </div>
+            <hr>
+
+            <br><br><br>
+            <div class="footercopy">Copyright ©2019 EduShare</div>
+        </div>
+
+    </footer>
+</body>
+
+
+<script src="js/global.js"></script>
+</html>

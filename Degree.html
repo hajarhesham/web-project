@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edu-Share</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/degree.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="layer1">
+            <img class="logo" src="style/imgs/logo.png">
+            <div class="searchcont">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" placeholder="Search.." class="search">
+            </div>
+            <button class="logout" onclick=" visiturl('index.html') ">Log Out</button>
+             </div>
+            <div class="layer2">
+                    <div class="display"></div>
+                    <div class="user" onclick="visiturl('finalsigned.html')" >
+                        <div class="userimg"><img src=""></div>
+                        <div class="userinf">
+                            <h1>dr.rania ziedan</h1>
+                            <h3>Lecturer At Shoubr Faculty Of Engineering</h3>
+                        </div>
+                    </div>
+                    <div class="navtable">
+                        <table>
+                                <tr>
+                                    <td><a href="timetable.html">Time Table</a></td>
+                                    <td><a href="list.html">List</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="Degree.html">Degrees</a></td>
+                                    <td><a href="HomeWork.html">HomeWorks</a></td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="degree">
+            <h1>#Degree</h1>
+        </div>
+        <div class="list">
+            <ul class="liststyle">
+                <li class="li"><a href="WrittenExam.html">Written Exam:100</a></li>
+                <li class="li"><a href="Project.html">Project:30</a></li>
+                <li class="li"><a href="CourseWork.html">Course Work:45</a></li>
+            </ul>  
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+            <div class="container">
+                    <div class="socialmedia">
+                            <a href="http://linkedin.com"><img src="style/imgs/social1-06.png"></a>
+                            <a href="http://twitter.com"><img src="style/imgs/social1-07.png"></a>
+                            <a href="http://facebock.com"><img src="style/imgs/social1-08.png"></a>
+                        </div>
+                <div class="newsletter">
+                    <div class="dash"></div>
+                    <div class="footernewsl">
+                            <form id="fo">
+                                <label for="newsletterE" >Subscribe to newsletter</label><br>
+                                <input id="newsletterE" type="email" placeholder="Email Adress">
+                                <input id="newsletterB" type="button" value="Subscribe">
+                            </form>
+                            <div id="warning"></div>
+                            
+                    </div>
+                </div>
+                <hr>
+                   
+                <br><br><br>
+                <div class="footercopy">Copyright ©2019 EduShare</div>
+            </div>
+            
+    </footer>
+</body>
+</html>
+
+<script src="js/global.js"></script>

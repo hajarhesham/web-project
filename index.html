@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edu-Share</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/stylemain.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div id="logo"><img src="style/imgs/logo2.png"></div>
+                <ul>
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="index.html#registration">Log In</a></li>
+                    <li><a href="index.html#ourclients">Our Clients</a></li>
+                    <li><a href="index.html#aboutus">About Us</a></li>
+                    <li><a href="contact us.html">Contact</a></li>
+                </ul>
+                <div class="searchcontainer">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" class="search" placeholder="Search..." disabled>
+                </div>
+            </nav>
+            <div class="slider">
+                <div class="display show" style="background-image: url('style/imgs/option3.jpg');" id="display1">
+                    <h1 class="typing"></h1>
+                </div>
+            
+                <div class="display " style=" background-image:url('style/imgs/option2.jpg')" id="display2">
+                    <h1 class="typing">It Is Just About <br> Being Professional</h1>
+            
+                </div>
+                <div class="display " style=" background-image:url('style/imgs/option1.jpg')" id="display3">
+                    <h1 class="typing">It Is Just About <br> Being Professional</h1>
+                </div>
+            
+                <div class="display " style=" background-image:url('style/imgs/option4.jpg')" id="display4">
+                    <h1 class="typing">It Is Just About <br> Being Professional</h1>
+                </div>
+            </div>
+    </header>
+
+
+    <section>
+        <div class="container">
+            <div id="registration">
+                <div class="signup">
+                        <h1>By Registring You Will Be Able To :</h1>
+                        <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempo.</p>
+                        <button onclick="visiturl('Register.html')" id="Register" >Register</button>
+                </div>
+                <div class="signin">
+                    <div id="signin1">
+                        <form>
+                            <input id="UN" type="text" placeholder="username..." >
+                            <br>
+                            <input id="PW" type="password" placeholder="password...">
+                            <div id="alert"></div>
+                            <i class="far fa-eye" id="eye"></i> 
+                        </form>
+                </div>
+
+                    <div id="signin2">
+                        <form >
+                            <input id="btn" class="entring" type="button" value="Sign In">
+                            <br>
+                            <input class="forgot" type="button" value="Forgot My Password!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+
+            <div id="ourclients">
+                <div class="row1">
+                    <a href="https://google.com" target="_blank"><img src="style/imgs/google.png"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="style/imgs/youtube.png"></a>
+                    <a href="https://classroom.google.com" target="_blank"><img src="style/imgs/classroom.png"></a>
+                    
+                </div>
+                <div class="row2">
+                    <a href="https://bu.edu.eg" target="_blank"><img src="style/imgs/banha university.png"></a>
+                    <a href="https://feng.bu.edu.eg" target="_blank"><img src="style/imgs/shoubra.png"></a>
+                    <a href="https://trello.com" target="_blank"><img src="style/imgs/trello.png"></a>
+                </div>
+                <div class="thanks">thanks for trust</div>
+            </div>
+
+            <div id="aboutus">
+                <h1>About Us</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempo.
+                    <br><br><a href="contact us.html">contact us</a>
+                </p>
+                </div>
+                <video  width="1580" height="920" autoplay loop>
+                        <source src="Comp2.mov" >
+                </video>
+            </div>
+    </section>
+
+
+
+
+    <footer>
+            <div class="container">
+                    <div class="socialmedia">
+                            <a href="http://linkedin.com" target="_blank"><img src="style/imgs/social1-06.png"></a>
+                            <a href="http://twitter.com" target="_blank"><img src="style/imgs/social1-07.png"></a>
+                            <a href="http://facebock.com" target="_blank"><img src="style/imgs/social1-08.png"></a>
+                        </div>
+                <div class="newsletter">
+                    <div class="dash"></div>
+                    <div class="footernewsl">
+                            <form id="fo">
+                                <label for="newsletterE" >Subscribe to newsletter</label><br>
+                                <input id="newsletterE" type="email" placeholder="Email Adress">
+                                <input id="newsletterB" type="button" value="Subscribe">
+                            </form>
+                            <div id="warning"></div>
+                            
+                    </div>
+                </div>
+                <hr>
+                   
+                <br><br><br>
+                <div class="footercopy">Copyright ©2019 EduShare</div>
+            </div>
+            
+    </footer>
+  
+    <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+
+    </body>
+    </html>

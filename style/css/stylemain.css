@@ -1,0 +1,422 @@
+
+/*Global*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:#FFFFFF;
+}
+.container{
+    margin:auto;
+    overflow: hidden;
+ }
+ a{
+     text-decoration: none;
+ }
+ li{
+     list-style: none;
+ }
+ input,button{
+     border: none;
+ }
+
+ /*Header*/
+
+ header{
+    height: 100vh;
+}
+
+nav{
+   padding: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 15vh;
+   background-color: #2B7A77;
+   box-shadow: 0 2px 5px #17252A;
+   cursor: pointer; 
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 10;
+}
+
+.searchcontainer{
+   width: 300px;
+   vertical-align: middle;
+   white-space: nowrap;
+   position: relative;
+}
+.search{
+   width: 300px;
+   height: 50px;
+   background: #EAEAEA;
+   font-size: 16px;
+   float: left;
+   color: #2F5980;
+   padding-left: 45px;
+   padding-right: 10px;
+   border-radius: 4px;
+}
+.searchcontainer .icon{
+   position: absolute;
+   top: 50%;
+   margin-left: 17px;
+   margin-top: -10px;
+   z-index: 1;
+   color: #2B7A77;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 20px;
+}
+header a{
+    color: #DEF2F1 ;
+}
+/*nav span{
+    color: #91B3CC;
+}*/
+
+
+#logo img{
+    height: 70px;
+}
+.slider{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+.display{
+   width:100%;
+   color: #17252A;
+   font-size: 40px;
+   text-align: left ;
+   background-position: top;
+   background-size: cover;
+   height: 100%;
+   line-height: 70px;
+   letter-spacing: 3px;
+   position: absolute;
+   transition: opacity 1s ease-in-out;
+   opacity:0;
+}
+
+.show{
+   opacity: 1;
+}
+
+.typing{
+    padding-top: 70vh;
+    padding-left: 80px;
+    text-shadow: 0.1px 0.1px 2px  #17252A;
+    width: 650px;
+}
+
+nav span:hover,a:hover{
+   color: #17252A;
+   font-size: 1.1em
+}
+
+ /*Section*/
+
+ section{
+    height: 400vh;
+}
+
+#registration{
+    height: 100vh;
+    background-color: #DEF2F1;
+
+}
+#ourclients{
+    height: 100vh;
+    background-color: #EAEAEA;
+    padding-top:12vh ;
+    position: relative;
+}
+
+#ourclients img{
+    height: 150px;
+    filter: grayscale(100%);
+    margin: 50px;
+}
+#ourclients img:hover{
+    height: 160px;
+    filter: none;
+
+    
+}
+
+.row1{
+    display: flex;
+    justify-content: space-around;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+}
+.thanks{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+    background-color: #2B7A77;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#aboutus{
+    padding-top: 30vh;
+    height: 100vh;
+    background-color: #FFFFFF;
+    
+}
+
+#aboutus h1{
+    color: #17252A;
+    margin:auto;
+    width: 20%;
+    text-align: center;
+    font-size: 50px;
+    border-top: 3px solid #17252A;
+    border-bottom: 3px solid #17252A;
+}
+#aboutus p{
+    float: left;
+    width: 80%;
+    margin-top: 100px;
+    text-align: left;
+    color: #17252A;
+    font-size: 34px;
+    margin-left: 10%;
+}
+#aboutus a{
+    text-decoration: underline;
+    color: #2F5980;
+    font-size: 24px;
+}
+#aboutus a:hover{
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+
+
+
+.signup{
+    height: 100vh;
+    width: 50%;
+    float: left;
+    padding-top: 30vh;
+}
+
+.signup h1{
+    height: 5vh ;
+    width: 80%;
+    color: #17252A;
+    text-align: center;
+    margin: auto ;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.signup p{
+    color: #2B7A77;
+    font-size: 20px;
+    margin:8vh 50px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.signup button{
+    width:  30%;
+    height: 6vh;
+    background-color: #2B7A77;
+    color: #FFFFFF;
+    border-radius: 2px;
+    font-size: 22px;
+    margin: 0 50%;
+    transform: translate(-50%,0);
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.signup button:hover{
+    background-color: #EAEAEA;
+    color: #17252A;
+    font-weight: bold;
+}
+.signin{
+    height:100vh ;
+    width: 50%;
+    background-size: cover;
+    float: right;
+    padding-top: 30vh;
+}
+
+.signin input{
+    margin: 1vh 50%;
+    transform: translate(-50%,0);
+    
+    width: 60%;
+    height: 7vh;
+    font-size: 22px;
+}
+
+#signin1 input{
+    padding: 5px;
+}
+#alert{
+    width: 40%;
+    height: 19px;
+    color: red;
+    margin: 0 20%;
+    
+}
+
+.fa-eye{
+   position: relative;
+   bottom: 60px;
+   left: 570px;
+   color: gray;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.active{
+    color: #2B7A77;
+}
+.fa-eye:hover{
+    font-size: 20px;
+}
+
+#signin2 input{
+    background-color: #2B7A77;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signin2 input:hover{
+    background-color: white;
+    color: #2F5980;
+}
+video{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+ /*footer*/
+
+ footer{
+     background-color: #17252A;
+     color: #FFFFFF;
+     text-align: center;
+     padding-top:20px;
+     height: 100%;
+    margin-top: 20vh;
+ }
+
+ .newsletter{
+    margin-top: 12vh;
+}
+
+ .dash{
+    height: 7px;
+    width: 60px;
+    background-color: #FFFFFF;
+    margin: auto;
+    
+    
+}
+footer .footernewsl{
+    margin-top: 7vh;
+}
+
+ footer img{
+     height: 90px;
+     margin: -70px 0;
+ }
+
+
+ footer label{
+    font-size: 34px;
+    margin: 30px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+ }
+
+
+ #newsletterE{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+ }
+ #newsletterB{  
+    width: 100px;
+    height: 40px;
+    background-color: #2B7A77;
+    color: #FFFFFF;
+    cursor: pointer;
+    letter-spacing: 1px;
+ }
+
+
+ #newsletterE:focus{
+     border:  2px solid #FFFFFF;
+ }
+ #newsletterB:hover{
+    background-color: #FFFFFF;
+    color: #2B7A77;
+    font-weight: bold;
+ }
+
+ 
+ #warning{
+    margin-top: 5px;
+    font-size: 18px;
+}
+ 
+ hr{
+     height: 2px;
+     width: 60%;
+     margin: auto;
+     margin-top: 5vh;
+     margin-bottom: -5vh;
+     background-color: #FFFFFF;
+ }
+ 
+
+.socialmedia a img:hover{
+    height: 95px;
+}
+
+
+.footercopy{
+    margin-bottom: 5vh;
+    font-size: 20px;
+    letter-spacing: 2px
+}
+
+
